@@ -1,7 +1,7 @@
 (defproject project "0.1.0-SNAPSHOT"
 
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "Project: write description"
+  :url "https://github.com/ssydbarrett/project"
 
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [selmer "0.9.0"]
@@ -40,8 +40,8 @@
    :project/dev  {:dependencies [[ring/ring-mock "0.2.0"]
                                  [ring/ring-devel "1.4.0"]
                                  [pjstadig/humane-test-output "0.7.0"]]
-                  
-                  
+
+
                   :repl-options {:init-ns project.core}
                   :injections [(require 'pjstadig.humane-test-output)
                                (pjstadig.humane-test-output/activate!)]
